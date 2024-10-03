@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+html, body {
+  height: 100%; 
+  margin: 0; 
+  overflow-x: hidden; 
+  scroll-behavior: smooth; 
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  height: 100vh; 
+  background-image: url('/public/starryearth.jpg'); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: rgb(245, 245, 239); 
+  text-align: left; 
+  padding: 20px; 
+  font-family: 'Bebas Neue', sans-serif; 
+  animation: fadeInLeft 2s ease-in-out; 
+}
+
+.home-title {
+  font-size: 4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  margin-top: 50px; 
+  animation: fadeInLeft 2s ease-in-out; 
+  animation-delay: 0.5s; 
+}
+
+/* Project Overview Section */
+.project-overview {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-image: url('/public/nebula.jpg');
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: rgb(245, 245, 239); 
+  text-align: center; 
+  padding: 20px; 
+}
+
+.overview-content {
+  max-width: 600px; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 30px; 
+  border-radius: 10px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  animation: fadeInUp 2s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.overview-content:hover {
+  transform: scale(1.05); 
+  border: 2px solid rgba(255, 255, 255, 0.5); 
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); 
+  }
+}
+
+.overview-title {
+  font-size: 2.5em; 
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  animation: fadeInLeft 2s ease-in-out;
+  animation-delay: 1s; 
+}
+
+.overview-text {
+  font-size: 1.2em; 
+  line-height: 1.6;
+  text-align: center; 
+  animation: fadeInUp 2s ease-in-out;
+  animation-delay: 1.5s; 
+}
+
+/* New Section (Goals Section) */
+.goals-section {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  height: 90vh;
+  padding: 50px 20px;
+  background-image: url('/public/SECONDSEC.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: #f5f5ef;
+  text-align: left; 
+  position: relative; 
+}
+
+.goals-text {
+  max-width: 50%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  animation: fadeInLeft 2s ease-in-out; 
+  position: absolute; 
+  top: 20px; 
+  left: 20px; 
+  font-family: 'Prata', serif; 
+}
+
+.goals-images {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 20px; 
+  max-width: 40%; 
+  animation: fadeInRight 2s ease-in-out; 
+  margin-left: auto; 
+  margin-top: 100px; 
+}
+
+.flashcard {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px; 
+  padding: 30px;  
+  text-align: center; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  width: 200px; 
+  margin: 0 10px; 
+  animation: float 3s ease-in-out infinite; 
+}
+
+.flashcard:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); 
+}
+
+/* New Section: NASA PACE Mission */
+.pace-section {
+  background-image: url('/public/nebula.jpg'); 
+  height: 100vh; 
+  background-size: cover; 
+  background-position: center; 
+  color: #f5f5ef; 
+  padding: 40px 20px; 
+  text-align: left; 
+  margin: 0; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
+}
+
+.pace-title {
+  font-size: 2.5em; 
+  font-family: 'Prata', serif; 
+  margin-bottom: 30px; 
+  margin-top: -40px; 
+}
+
+.pace-flashcards {
+  display: flex; 
+  justify-content: space-between; 
+  gap: 20px; 
+  margin-top: 20px; 
+  flex-wrap: wrap; 
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Footer Section */
+.footer {
+  background-color: #000; 
+  color: #f5f5ef; 
+  padding: 20px; 
+  text-align: center; 
+  font-family: 'Teko', sans-serif; 
+  position: relative; 
+}
+
+.footer-content {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.footer-social {
+  display: flex; /* Flexbox for social icons */
+  justify-content: center; /* Center the icons */
+  gap: 20px; /* Space between icons */
+  margin-top: 10px; /* Space above the icons */
+}
+
+.footer-social a {
+  color: #f5f5ef; /* Icon color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.5em; /* Size of social icons */
+}
+
+.footer-social a:hover {
+  color: #ff9800; /* Change color on hover */
+}
+
+.footer-text {
+  margin-top: 20px; /* Space above the footer text */
+  font-size: 0.9em; /* Size of footer text */
+}

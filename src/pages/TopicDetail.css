@@ -1,0 +1,117 @@
+.topic-detail-container {
+    padding: 40px;
+    color: #333;
+  }
+  
+  .topic-detail-container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .topic-detail-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .topic-detail-container p {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Photo Gallery Section for PhytoPulse */
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three images per row */
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .photo-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .photo-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .photo-item:hover .photo-description {
+    opacity: 1; /* Show description on hover */
+  }
+  
+  /* Image placeholders (you can change the paths to your images) */
+  .photo-item:nth-child(1) img {
+    content: url('/public/DINOPHYSIS\ SPECIES.jpg'); /* First image */
+  }
+  
+  .photo-item:nth-child(2) img {
+    content: url('/public/CHAETOCEROUS\ DEBILIS.jpg'); /* Second image */
+  }
+  
+  .photo-item:nth-child(3) img {
+    content: url('/public/ALEXANDRIUM\ TAMARANSEE.jpg'); /* Third image */
+  }
+  
+  .photo-item:nth-child(4) img {
+    content: url('/public/EMILLIANA\ HUEXEI.jpg'); /* Fourth image */
+  }
+  
+  .photo-item:nth-child(5) img {
+    content: url('/public/MYRINECTA\ RUBA.jpg'); /* Fifth image */
+  }
+  
+  .photo-item:nth-child(6) img {
+    content: url('/public/PHAEOCYSTSIS\ SPECIES.jpg'); /* Sixth image */
+  }
+  
+  /* Descriptions for each image */
+  .photo-item:nth-child(1) .photo-description {
+    content: 'Phytoplankton in the Atlantic Ocean';
+  }
+  
+  .photo-item:nth-child(2) .photo-description {
+    content: 'Phytoplankton bloom near Antarctica';
+  }
+  
+  .photo-item:nth-child(3) .photo-description {
+    content: 'Diverse species of phytoplankton';
+  }
+  
+  .photo-item:nth-child(4) .photo-description {
+    content: 'Phytoplankton seen from space';
+  }
+  
+  .photo-item:nth-child(5) .photo-description {
+    content: 'Phytoplankton and their role in the ecosystem';
+  }
+  
+  .photo-item:nth-child(6) .photo-description {
+    content: 'Microscopic view of phytoplankton';
+  }
+  
